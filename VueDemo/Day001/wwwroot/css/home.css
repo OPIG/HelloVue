@@ -38,6 +38,88 @@ h2 {
 .content .img-box::before {
   margin: -5px;
   box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+  animation-delay: -4s;
+}
+@-webkit-keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0, 962px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 430px, 0);
+  }
+  50% {
+    clip: rect(430px, 962px, 432px, 0);
+  }
+  75% {
+    clip: rect(0, 964px, 432px, 962px);
+  }
+}
+@-moz-keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0, 962px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 430px, 0);
+  }
+  50% {
+    clip: rect(430px, 962px, 432px, 0);
+  }
+  75% {
+    clip: rect(0, 964px, 432px, 962px);
+  }
+}
+@-ms-keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0, 962px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 430px, 0);
+  }
+  50% {
+    clip: rect(430px, 962px, 432px, 0);
+  }
+  75% {
+    clip: rect(0, 964px, 432px, 962px);
+  }
+}
+@-o-keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0, 962px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 430px, 0);
+  }
+  50% {
+    clip: rect(430px, 962px, 432px, 0);
+  }
+  75% {
+    clip: rect(0, 964px, 432px, 962px);
+  }
+}
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0, 962px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 430px, 0);
+  }
+  50% {
+    clip: rect(430px, 962px, 432px, 0);
+  }
+  75% {
+    clip: rect(0, 964px, 432px, 962px);
+  }
+}
+.content .img-box::after {
+  margin: -5px;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
 }
 .content .health-box {
   width: 50%;

@@ -45,10 +45,22 @@ h2{
 		&::before{
 			margin: -5px;
 			box-shadow: inset 0 0 0 2px;
-			//animation: clipMe 8s linear infinite;
+			animation: clipMe 8s linear infinite;
+			animation-delay: -4s;
+
+			.keyframes(clipMe,
+			{
+				0%,100%{clip:rect(0,962px,2px,0)}
+				25%{clip:rect(0,2px,430px,0)}
+				50%{clip:rect(430px,962px,432px,0)}
+				75%{clip:rect(0,964px,432px,962px)}
+			})
+			
 		}
 		&::after{
-			//animation: clipMe 8s linear infinite;
+			margin: -5px;
+			box-shadow: inset 0 0 0 2px;
+			animation: clipMe 8s linear infinite;
 		}
 	}
 	.health-box{

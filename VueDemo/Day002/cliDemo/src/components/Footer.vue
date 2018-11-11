@@ -1,12 +1,19 @@
 <template>
     <footer>
         <h1>{{copyRight}}</h1>
+        <p>{{titleValue}}</p>
     </footer>
 </template>
 
 <script>
 export default {
     name:"",
+    props:{
+        titleValue:{
+            type:String,
+            required: true
+        }
+    },
     data(){
         return {
             copyRight: "@copyright 2018 by Atom"
@@ -18,7 +25,6 @@ export default {
 <style scoped>
     footer{
         width: 100%;
-        height: 42px;
         box-sizing: border-box;
         padding: 10px 0px;
         background-color:#222;

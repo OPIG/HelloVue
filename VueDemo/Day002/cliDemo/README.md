@@ -1,6 +1,6 @@
 # clidemo
 
-> set cli
+> A Vue.js project
 
 ## Build Setup
 

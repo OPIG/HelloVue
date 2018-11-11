@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header v-on:titleChange="titleChanges($event)" v-bind:titleValue="titleOld"></app-header>
     <app-content></app-content>
-    <app-footer></app-footer>
+    <app-footer v-bind:titleValue="titleOld"></app-footer>
   </div>
 </template>
 
@@ -14,9 +14,19 @@ import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    "app-header": Header,
-    "app-footer": Footer,
-    "app-content": Content
+    "app-header":Header,
+    "app-content":Content,
+    "app-footer":Footer
+  },
+  data(){
+    return{
+       titleOld:"this is old title"
+    }
+  },
+  methods:{
+    titleChanges:function(newTitle){
+        this.titleOld=newTitle
+    }
   }
 }
 </script>
@@ -28,5 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

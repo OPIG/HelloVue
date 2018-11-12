@@ -1,8 +1,8 @@
 # HelloVue
 practice vue
-Day001
-using less+vue  ..
-animation: keyframe, clip: rect(top, right,bottom,left);..
+**one.** Day001
+using less+vue  
+animation: keyframe, clip: rect(top, right,bottom,left);  
 new Vue({  
   el:'',  
   data:{},  
@@ -11,4 +11,7 @@ new Vue({
     b:function(){}  
   }  
 })  
-😄  
+😄 [icon](https://emojipedia.org )
+
+**Two.** Day002
+[]

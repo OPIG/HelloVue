@@ -20,7 +20,7 @@ new Vue({
 
 **Two.** Day002  
 |*name*|~~gender~~|**age**|  
-|:---:|:----:|----|  
+|:----:|:-----:|:-----:|  
 |Atom Yuan|male|27|  
 |x Yuan|male|26|  
 |z Yuan|female|25|  

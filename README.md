@@ -32,6 +32,9 @@ new Vue({
 
 root title
  ===== 
+ common content
  
 parent title
- ---- 
+ ----
+ comsdfsdfs sdfs
+ 111111sdfs

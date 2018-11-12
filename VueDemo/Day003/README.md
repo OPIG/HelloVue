@@ -1,6 +1,6 @@
-# router-demo
+# day003
 
-> this is a demo about router
+> A Vue.js project
 
 ## Build Setup
 

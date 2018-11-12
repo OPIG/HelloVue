@@ -1,22 +1,32 @@
 <template>
   <div id="app">
-  <router-link to="/">Home</router-link >
-  <router-link to="/user">footer</router-link>
-    <app-header></app-header>
-    <router-view></router-view>
-    <app-footer></app-footer>
+	<app-header v-bind:contData="cont" v-on:titleChange="titleChanged($event)"></app-header>
+    <img src="./assets/logo.png">
+	<router-view></router-view>
+  <app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    "app-header": Header,
-    "app-footer": Footer
+  "app-header":Header,
+  "app-footer":Footer
+  },
+  data(){
+	return {
+		cont:"THIS IS CONTENT"
+	}
+  },
+  methods:{
+	  titleChanged(data){
+      this.cont=data;
+	  }
   }
 }
 </script>
@@ -28,6 +38,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

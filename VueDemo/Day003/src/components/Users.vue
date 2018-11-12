@@ -1,10 +1,12 @@
 <template>
     <div class="user">
-        <div v-for="(user, idx) in userData">
+        <ul>
+        <li v-for="(user, idx) in userData">
             <h1>{{user.name}}</h1>
             <p>{{user.age}}</p>
             <p>{{user.email}}</p>
-        </div>
+        </li>
+        </ul>
     </div>
 </template>
 
@@ -12,7 +14,7 @@
      export default{
          data(){
              return {
-                 userData:[]
+                 userData:[{name:"Atom"}]
              }
          },
          created(){
@@ -23,6 +25,19 @@
          }
      }
 </script>
-<style>
-
+<style scoped>
+    ul{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul li{
+        list-style: none;
+        flex-grow: 1;
+        flex-basis:200px;
+        margin: 10px;
+        border: 1px solid #222;
+        color: #444;
+    }
 </style>

@@ -16,7 +16,8 @@ new Vue({
 })  
 ```
 
-😄 [icon](https://emojipedia.org )
+😄 [icon][1]
+[1](https://emojipedia.org )
 
 **Two.** Day002  
 | *name* | ~~gender~~ | **age** |  

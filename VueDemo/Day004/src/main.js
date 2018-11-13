@@ -12,12 +12,13 @@ Vue.use(VueRouter);
 
 const router=new VueRouter({
   routes:[
-    {path:'/',component:Home},
-    {path:'/menu',component:Menu},
-    {path:'/admin',component:Admin},
-    {path:'/about',component:About},
-    {path:'/login',component:Login},
-    {path:'/register',component:Register}
+    {path:'/',name:"homeLink",component:Home},
+    {path:'/menu',name:"menuLink",component:Menu},
+    {path:'/admin',name:"adminLink",component:Admin},
+    {path:'/about',name:"aboutLink",component:About},
+    {path:'/login',name:"loginLink",component:Login},
+    {path:'/register',name:"registerLink",component:Register},
+    {path:'*',redirect:'/'}//default router
   ],
   mode:"history"
 });

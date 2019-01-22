@@ -6,7 +6,18 @@
     <div class="container">
       <router-view></router-view>
     </div>
-   <div class="container">
+    <div class="container">
+        <div class="col-md-4">
+            <router-view name="telnum"></router-view>
+        </div>
+        <div class="col-md-4">
+            <router-view name="hist"></router-view>
+        </div>
+        <div class="col-md-4">
+            <router-view name="deli"></router-view>
+        </div>
+    </div>
+     <div class="container">
      <app-footer></app-footer>
     </div>
   </div>

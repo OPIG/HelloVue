@@ -1,8 +1,9 @@
 <template>
-    <div>
+<div>
     <h1>Home</h1>
     <button class="btn btn-success" @click="goToMenu">Let's order</button>
-    </div>
+    
+</div>
 </template>
 
 <script>
@@ -17,7 +18,6 @@
 
                 //指定跳转到路由的名字下
                 this.$router.replace({name:'aboutLink'});
-
                //常用--通过push 进行压栈式跳转，这个方法会向 history 栈添加一个新的记录，所以，当用户点击浏览器后退按钮时，则回到之前的 URL。
                //this.$router.push('/register');
                //this.$router.push({name:'aboutLink'})

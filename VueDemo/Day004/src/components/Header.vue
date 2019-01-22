@@ -8,7 +8,7 @@
         <ul class="navbar-nav">
             <li><router-link tag="div" :to="{name:'homeLink'}" class="nav-link">主页</router-link></li>
             <li><router-link :to="{name:'menuLink'}" class="nav-link">菜单</router-link></li>
-            <li><router-link to="/admin" class="nav-link">管理</router-link></li>
+            <li><router-link :to="{name:'adminLink'}" class="nav-link">管理</router-link></li>
             <li><router-link to="/about" class="nav-link">关于我们</router-link></li>
         </ul>
         <ul class="navbar-nav ml-auto">

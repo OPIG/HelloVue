@@ -1,9 +1,18 @@
 <template>
+<<<<<<< HEAD
 <div>
     <h1>Home</h1>
     <button class="btn btn-success" @click="goToMenu">Let's order</button>
     
 </div>
+=======
+    <div class="homeContent">
+        <div class="bg-box">
+            <h1>Home</h1>
+            <button class="btn btn-success" @click="goToMenu">Let's order</button>
+        </div>
+    </div>
+>>>>>>> a25f8b57d6c463806bf1a25aa0781519e6b28733
 </template>
 
 <script>
@@ -26,3 +35,21 @@
     }
 </script>
 
+<style>
+    .homeContent{
+        background: url('../assets/bg.jpg') no-repeat;
+        background-size: cover;
+        height: 85vh;
+        padding: 10%;
+    }
+    h1{
+        margin: 6%;
+    }
+    .bg-box{
+        background: #eee;
+        opacity: .8;
+        max-width: 70vw;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+</style>
